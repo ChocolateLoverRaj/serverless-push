@@ -1,0 +1,14 @@
+{
+  "root": true,
+  "parserOptions": {
+    "project": "./eslint-tsconfig.json"
+  },
+  "ignorePatterns": [
+    "dist",
+    "vite-env.d.ts"
+  ],
+  "extends": [
+    "standard-with-typescript",
+    "standard-jsx"
+  ]
+}
