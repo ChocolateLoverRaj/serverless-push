@@ -7,5 +7,14 @@ export default defineConfig({
   plugins: [
     preact(),
     VitePWA({ registerType: 'autoUpdate' })
-  ]
+  ],
+  resolve: {
+    alias: {
+      Buffer: 'buffer',
+      util: 'util'
+    }
+  },
+  define: {
+    'process.env': {}
+  }
 })

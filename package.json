@@ -4,18 +4,25 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "ntl dev",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "generate-vapid-keys": "web-push generate-vapid-keys"
   },
   "dependencies": {
+    "@ably-labs/react-hooks": "^2.1.0",
+    "ably": "^1.2.36",
+    "buffer": "^6.0.3",
+    "json-parse-safe": "^2.0.0",
     "preact": "^10.11.3"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.5.0",
+    "@types/web-push": "^3.3.2",
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
+    "dotenv": "^16.0.3",
     "eslint": "^8.34.0",
     "eslint-config-standard-jsx": "^11.0.0",
     "eslint-config-standard-with-typescript": "^34.0.0",
@@ -23,8 +30,11 @@
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
+    "rollup-plugin-node-polyfills": "^0.2.1",
     "typescript": "^4.9.3",
+    "util": "^0.12.5",
     "vite": "^4.1.0",
-    "vite-plugin-pwa": "^0.14.4"
+    "vite-plugin-pwa": "^0.14.4",
+    "web-push": "^3.5.0"
   }
 }
